@@ -71,7 +71,7 @@ def extraer_coodernadas(lago, pais):
     url_geocode  = "https://geocode.maps.co/search?q={}"
     lago_url     = url_geocode.format(lago.replace(' ','+'))
     time.sleep(10)
-    request_lago = requests.get(lago_url, headers={"Authorization" : "65ff1f1e5bafe015765365hvcee8ba9"})
+    request_lago = requests.get(lago_url, headers={"Authorization" : "<yourAPYKEY>"})
     time.sleep(10)
     geocode_direcciones = {'direcciones':request_lago.json()}
     
